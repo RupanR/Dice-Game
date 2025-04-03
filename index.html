@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Dice Game</title>
   </head>
-  <body>
+  <body onload="handleStart()">
     <div class="main">
       <div class="header">
         <b>Let's Play Dice</b>
@@ -21,7 +21,13 @@
         <div class="player">
           <h3>Player-1</h3>
           <h1 id="player1-score">0</h1>
-          <button type="button" id="player1-button">Roll Now</button>
+          <button
+            type="button"
+            id="player1-button"
+            onclick="handleDiceRoll('Player-1')"
+          >
+            Roll Now
+          </button>
         </div>
         <div class="dice">
           <img src="images/1.png" alt="dice" id="dice" />
@@ -29,11 +35,17 @@
         <div class="player">
           <h3>Player-2</h3>
           <h1 id="player2-score">0</h1>
-          <button type="button" id="player2-button">Roll Now</button>
+          <button
+            type="button"
+            id="player2-button"
+            onclick="handleDiceRoll('Player-2')"
+          >
+            Roll Now
+          </button>
         </div>
       </div>
       <div class="reset">
-        <button type="button">RESET</button>
+        <button type="button" onclick="handleReset()">RESET</button>
       </div>
     </div>
     <script src="script.js"></script>

@@ -58,6 +58,11 @@
     cursor: pointer;
 }
 
+.player button:disabled{
+    background-color: gray;
+    cursor: not-allowed;
+}
+
 .dice{
     color: green;
     font-size: 40px;
@@ -66,6 +71,33 @@
 .dice img{
     width: 130px;
 }
+
+.rotate{
+    animation: diceRoll 1s linear;
+}
+
+@keyframes diceRoll {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    25%{
+        transform: rotateZ(90deg);
+    }
+    50%{
+        transform: rotateZ(180deg);
+    }
+    75%{
+        transform: rotateZ(270deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+
+
+
+
 
 .reset{
     padding: 20px;
