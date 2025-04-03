@@ -67,7 +67,7 @@ const checkGameOver = (totalScore, player) => {
   if (totalScore >= 30) {
     player1Button.disabled = true;
     player2Button.disabled = true;
-    playerMove.innerText = `${player} Won the Game 🎉🎊`;
+    playerMove.innerText = `${player} Won the Game 🎉`;
   }
 };
 
