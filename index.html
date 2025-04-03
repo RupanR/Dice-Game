@@ -12,6 +12,30 @@
     <title>Dice Game</title>
   </head>
   <body>
+    <div class="main">
+        <div class="header">
+            <b>Let's Play Dice</b>
+            <h1 id="player-move">Player-1 To Play</h1>
+        </div>
+        <div class="game">
+            <div class="player">
+                <h3>Player-1</h3>
+                <h1 id="player1-score">0</h1>
+                <button type="button" id="player1-button" >Roll Now</button>
+            </div>
+            <div class="dice">
+                <img src="images/1.png" alt="dice" id="dice">
+            </div>
+            <div class="player">
+                <h3>Player-2</h3>
+                <h1 id="player2-score">0</h1>
+                <button type="button" id="player2-button" >Roll Now</button>
+            </div>
+        </div>
+        <div class="reset">
+            <button type="button">RESET</button>
+        </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
